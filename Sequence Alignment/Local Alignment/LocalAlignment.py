@@ -38,6 +38,13 @@ def localAlignment(s1: str, s2: str, scoreMatrix: dict, indelPenalty: int) -> {i
                 maxScoreRow = i
                 maxScoreCol = j
 
+    # Count number of optimal alignments
+    numOptimal = 0
+    for i in range(1, rows):
+        for j in range(1, cols):
+            if maxScore == matrix[i][j]:
+                numOptimal += 1
+
     # Find optimal alignments
     v = ""
     w = ""
@@ -70,4 +77,4 @@ def localAlignment(s1: str, s2: str, scoreMatrix: dict, indelPenalty: int) -> {i
             break
         curr = matrix[i][j]
 
-    return maxScore, v, w
+    return maxScore, numOptimal, v, w
