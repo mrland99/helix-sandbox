@@ -1,7 +1,7 @@
 # max-bio
 A compilation of various useful algorithms in computational biology written by myself.
 
-Here are the descriptions of the algorithms
+Here are the descriptions of the algorithms:
 
 1. Sequence Alignment
    - `Global Alignment`- Aligns two sequences from beginning to end factoring in mistmatches and indels. Each letter in each sequence is aligned only once.
