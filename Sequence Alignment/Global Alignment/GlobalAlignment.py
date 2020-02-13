@@ -2,7 +2,8 @@ import numpy as np
 
 
 def globalAlignment(s1: str, s2: str, scoreMatrix: dict, indelPenalty: int) -> {int, str, str}:
-    """ Find the highest-scoring alignment between two strings using a scoring matrix.
+    """ Find the highest-scoring alignment between two strings using a scoring matrix. 
+        Implemented using Needle-Wunsch Algorithm. For linear space algorithm, see Hirschberg Algorithm.
         Input: Two amino acid strings s1, s2. Scoring matrix and indel penalty.
         Return: The maximum alignment score of these strings followed by an alignment achieving this maximum score.
     """
