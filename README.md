@@ -1,5 +1,5 @@
-# max-bio
-A compilation of various useful algorithms in computational biology written by myself.
+# helix-sandbox
+A compilation of various useful algorithms in computational biology written by myself. Work in progress.
 
 Here are the descriptions of the algorithms:
 
