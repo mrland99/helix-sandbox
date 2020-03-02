@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 
-def neighborJoining(D: np.ndarray, n: int, vertexList = None):
+def neighborJoining(D: np.ndarray, n: int, vertexList = None) -> (dict, dict, list):
     """
         Finds the simple fitting tree for an n x n distance matrix D.
 
