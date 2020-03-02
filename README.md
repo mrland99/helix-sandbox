@@ -11,4 +11,5 @@ Here are the descriptions of the algorithms:
    * `Fitting Alignment` - Given sequence *v* and *w*, returns optimal alignment between the whole sequence *w* to all possible substrings of *v*. 
 2. Phylogeny:
    * `Additive Phylogeny` - Finds the simple tree fitting an n x n additive distance matrix D.
+   * `Neighbor Joining` - Finds the simple fitting tree for an n x n distance matrix D.
    
