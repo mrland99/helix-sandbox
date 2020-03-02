@@ -1,7 +1,7 @@
 import numpy as np
 import math
 
-def additivePhylogeny(D: np.ndarray, n: int, newIndexCount: int) -> (dict, dict):
+def additivePhylogeny(D: np.ndarray, n: int, newIndexCount: int) -> (dict, dict, int):
     """
     Finds the simple fitting tree for an n x n distance matrix D.
 
