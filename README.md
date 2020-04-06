@@ -12,4 +12,6 @@ Here are the descriptions of the algorithms:
 2. Phylogeny:
    * `Additive Phylogeny` - Finds the simple tree fitting an n x n additive distance matrix D.
    * `Neighbor Joining` - Finds the simple fitting tree for an n x n distance matrix D.
+3. Clustering Algorithms:
+   * `Lloyd's Algorithm` -  Popular clustering heuristics for the k-Means Clustering Problem.
    
