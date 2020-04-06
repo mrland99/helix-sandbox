@@ -3,7 +3,7 @@ import sys
 import math
 
 
-def LloydAlgorithm(k: int, m: int, points: np.ndarray):
+def LloydAlgorithm(centroids: np.ndarray, points: np.ndarray):
     """
     Lloyd's algorithm is a popular clustering heuristic for k-Means clustering problem.
     It first chooses k arbitrary points Centers from Data as centers and then iteratively performs the following
@@ -14,12 +14,13 @@ def LloydAlgorithm(k: int, m: int, points: np.ndarray):
         2) Clusters to Centers: After data points have been assigned to clusters, assign each cluster’s center of
         gravity to be the cluster’s new center.
 
-    :param k: number of centers
-    :param m: number of dimensions in data
+    :param centroids: initial centers
     :param points: numpy array of data points
     :return: set of centers consisting of k points
     """
-    centroids = points[0:k]
+    # store number of centers and dimension
+    k, m = centroids.shape
+
     labels = clusterPoints(centroids, points)
     newCentroids = updateCentroids(points, labels, k, m)
     while not np.allclose(centroids, newCentroids, atol=1e-03):
