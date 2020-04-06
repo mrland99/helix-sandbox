@@ -14,4 +14,4 @@ Here are the descriptions of the algorithms:
    * `Neighbor Joining` - Finds the simple fitting tree for an n x n distance matrix D.
 3. Clustering Algorithms:
    * `Lloyd's Algorithm` -  Popular clustering heuristics for the k-Means Clustering Problem.
-   
+   * `Soft K-Means` - Soft K-means clustering treats the cluster assignments as probability distributions over the clusters.
